@@ -39,6 +39,10 @@ class PhotoGalleryPage extends Page {
 		$fields->addFieldToTab('Root.ImageGallery', $gridfield);
 		
 		$fields->renameField("Content", "Intro Text");
+		$fields->removeFieldFromTab("Root.Main","rightContent");
+		$fields->removeFieldFromTab("Root.Main","rightImage");
+
+
 		
 		return $fields;
 		
